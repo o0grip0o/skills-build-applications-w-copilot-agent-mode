@@ -2,10 +2,10 @@ from django.core.management.base import BaseCommand
 from octofit_tracker.models import User, Team, Activity, Leaderboard, Workout
 
 class Command(BaseCommand):
-    help = 'Populate the database with test data'
+    help = 'Populate the database with test data for OctoFit Tracker'
 
     def handle(self, *args, **kwargs):
-        # Create test users
+        # Create test users for OctoFit
         user1 = User.objects.create(email="user1@example.com", name="User One", password="password1")
         user2 = User.objects.create(email="user2@example.com", name="User Two", password="password2")
 
